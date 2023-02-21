@@ -1,0 +1,47 @@
+{
+  "name": "@ezweave/multi-map",
+  "version": "0.0.1",
+  "description": "Use a collection of iteratees over a map or reduce operation",
+  "main": "dist/index.js",
+  "repository": "git@github.com:ezweave/@ezweave/multi-map.git",
+  "author": "Matt Weaver <ezweave@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/lodash": "^4.14.183",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.2.2",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.3",
+    "ts-loader": "^9.3.0",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^4.0.0",
+    "tsconfig-paths-jest": "^0.0.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.5.5",
+    "webpack": "^5.72.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "scripts": {
+    "build": "yarn lint && tsc",
+    "dev": "ts-node src/index.ts",
+    "lint.fix": "eslint --fix './src/**/*.ts'",
+    "lint": "eslint './src/**/*.ts'",
+    "prepublish": "yarn run build",
+    "test.noc": "jest -i --collectCoverage=false",
+    "test": "jest -i"
+  }
+}
