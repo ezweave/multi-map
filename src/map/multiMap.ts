@@ -1,19 +1,12 @@
-import { MultiMap, MultiMapFP } from './types';
+import { MultiMap } from './types';
 import { flow, map } from 'lodash';
-import { tap } from 'lodash/fp';
 
 export const multiMap: MultiMap['multiMap'] = (
   collection,
   ...functions
-) => map(collection, (value, keyOrIndex) => {
-  return flow(
-    tap(n => console.warn('BEFORE', n)),
-    ...functions,
-    tap(n => console.warn('AFTER', n)),
-  )(value, keyOrIndex);
-});
+) => map(collection, flow(...functions));
 
-export const multiMapFP: MultiMapFP['multiMapFP'] = <I extends any, O>(
+export const multiMapFP: MultiMap['multiMapFP'] = <I extends any, O>(
   ...functions
 ) => (
   collection,
