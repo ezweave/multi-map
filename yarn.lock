@@ -1406,6 +1406,11 @@ convert-source-map@^1.4.0, convert-source-map@^1.6.0, convert-source-map@^1.7.0:
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.9.0.tgz#7faae62353fb4213366d0ca98358d22e8368b05f"
   integrity sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==
 
+country-state-city@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/country-state-city/-/country-state-city-3.1.2.tgz#8b155a1bb17aaf03bac4193382e59c161f74f063"
+  integrity sha512-qpzY7GyzqgJsx5TQUak0ryhbMcn1bLN1mgQc37EWkJMOEbszrAMowjzmisnf8ybhLBnbesZ1LK3KTc7SUX1T1w==
+
 create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
@@ -3312,6 +3317,23 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+
+pi-decimals@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/pi-decimals/-/pi-decimals-2.0.3.tgz#c72a1d24a7ae72d6fd1ea0b47bbd269f47e713ce"
+  integrity sha512-2IP4BhJvadut9hUIhOEi/yQSB1MJ7Sj6fhsZsELmCWEWuh7548igVMKKJm1fAuha+EbLTl1l/1R14ayMCxNRRA==
+
+pi-number@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pi-number/-/pi-number-1.0.0.tgz#bd632a4634f05d151ca4ce2131183798b75a4b07"
+  integrity sha512-Cj6vl99VPQTYLjyXNm8h4iIafEoaXS8AtRf/TPvIwg4VIUcawGcN77Rqc1cPDn1R1fCAfsD80/huj0wIer7mvA==
+
+pi@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/pi/-/pi-2.0.4.tgz#c4467b7c6852503be7daec146d181a490ac1dbe8"
+  integrity sha512-XJclIZFY4tSfCGC7zcQU6W45GvISrKWyWB3KMrQSE1vFyAAL/mPtuer4dPB2WH12OZiwnmIyRMxkUB+s5s3C4g==
+  dependencies:
+    pi-decimals "^2.0.0"
 
 picocolors@^1.0.0:
   version "1.0.0"
