@@ -1,6 +1,6 @@
 {
   "name": "@ezweave/multi-map",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use a collection of iteratees over a map or reduce operation",
   "main": "dist/index.js",
   "repository": "git@github.com:ezweave/@ezweave/multi-map.git",
