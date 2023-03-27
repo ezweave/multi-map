@@ -9,5 +9,5 @@ export const multiMap: MultiMap['multiMap'] = (
 export const multiMapFP: MultiMap['multiMapFP'] = <I extends any, O>(
   ...functions
 ) => (
-  collection,
-) => multiMap<I, O>(collection, ...functions);
+    collection,
+  ) => multiMap<I, O>(collection, ...functions);

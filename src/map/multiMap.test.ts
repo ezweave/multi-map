@@ -42,8 +42,8 @@ describe(multiMap, () => {
     const str = 'ThisIsCamelCase';
 
     const obj = {
-      foo: str
-    }
+      foo: str,
+    };
 
     const result = multiMap(obj, mockSnakeCase, mockToUpper, mockReplacer);
     const expected = ['THIS_IS_SNAKE_CASE'];
@@ -88,5 +88,5 @@ describe(multiMapFP, () => {
     expect(mockSnakeCase).toHaveBeenCalledTimes(1);
     expect(mockToUpper).toHaveBeenCalledTimes(1);
     expect(mockReplacer).toHaveBeenCalledTimes(1);
-  })
+  });
 });
