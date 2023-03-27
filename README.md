@@ -1,6 +1,6 @@
 # multi-map
 
-Map or reduce operators that take a set of iteratees for each step
+Map or reduce operators that take a set of iteratees for each step.
 
 ## Table of Contents
 
@@ -47,6 +47,20 @@ As you can see, the gains are mostly marginal. But if you must _"trim that fat..
 [Home](#table-of-contents)
 
 ## Usage
+
+Installation is easy.
+
+Via `npm`:
+
+```shell
+npm i @ezweave/multi-map
+```
+
+Via `yarn`:
+
+```shell
+yarn add @ezweave/multi-map
+```
 
 There's two variants available, `multiMap` and `multiMapFP`. They are functionaly the same, only the `FP` variant changes the _-arity_ and curries out the input.
 
